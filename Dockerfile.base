@@ -31,11 +31,6 @@ RUN apt-get update \
 RUN curl --proto '=https' --tlsv1.2 -sSL https://sh.getsynth.com | sh -s -- --force --ci \
     && export PATH=$PATH:/root/.local/bin
 
-# [Option] Install Node.js
-ARG INSTALL_NODE="true"
-ARG NODE_VERSION="lts/*"
-RUN if [ "${INSTALL_NODE}" = "true" ]; then root -c "umask 0002 && . /usr/local/share/nvm/nvm.sh && nvm install ${NODE_VERSION} 2>&1"; fi
-
 # [Option] Install Azure CLI
 ARG INSTALL_AZURE_CLI="true"
 RUN if [ "$INSTALL_AZURE_CLI" = "true" ]; then bash /tmp/library-scripts/azcli-debian.sh; fi \
