@@ -40,9 +40,7 @@ RUN if [ "$INSTALL_AZURE_CLI" = "true" ]; then bash /tmp/library-scripts/azcli-d
 
 # [Option] Install Node-js
 ARG INSTALL_NODE_JS="true"
-RUN if [ "$INSTALL_NODE_JS" = "true" ]; then \
-    && apt-get update \
+RUN apt-get update \
     && apt install nodejs npm -y \
     && apt-get clean -y \
-    && apt-get autoremove -y; \
-    fi
+    && apt-get autoremove -y
