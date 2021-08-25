@@ -9,7 +9,7 @@ Set parameters:
 ```bash
 OWNER=lyscm
 CONTAINER_NAME=dotnet
-TAG=ghcr.io/lyscm/lyscm.common.tiers/dotnet
+TAG=ghcr.io/lyscm/environments/dotnet
 ```
 Remove any existing container:
 
