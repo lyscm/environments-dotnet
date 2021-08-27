@@ -38,7 +38,7 @@ RUN if [ "$INSTALL_AZURE_CLI" = "true" ]; then bash /tmp/library-scripts/azcli-d
     && apt-get autoremove -y\
     && rm -rf /var/lib/apt/lists/* /tmp/library-scripts
 
-# [Option] Install Node-js
+# [Option] Install Node.js
 ARG INSTALL_NODE_JS="true"
 RUN apt-get update \
     && apt install nodejs npm -y \
