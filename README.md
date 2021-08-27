@@ -1,16 +1,27 @@
 # .NET ENVIRONMENT BUILDER - REPOSITORY <h1> 
-
-[![environments-dotnet - CI](https://github.com/lyscm/environments-dotnet/actions/workflows/deploy-packages.yml/badge.svg?branch=master)](https://github.com/lyscm/environments-dotnet/actions/workflows/deploy-packages.yml)
+ 
+[![build](https://img.shields.io/github/workflow/status/lyscm/environments-dotnet/environment-dotnet%20-%20ci?logo=github)](https://github.com/lyscm/environments-dotnet/blob/master/.github/workflows/build-action.yml)
+[![repo size](https://img.shields.io/github/repo-size/lyscm/environments-dotnet?logo=github)](https://github.com/lyscm/environments-dotnet)
+[![package](https://img.shields.io/static/v1?label=package&message=dotnet&color=yellowgreen&logo=github)](https://github.com/lyscm/environments-dotnet/pkgs/container/environments%2Fdotnet)
 
 ## Initiate package(s): <h2> 
 
 Set parameters:
 
+***Bash:***
 ```bash
 OWNER=lyscm
 CONTAINER_NAME=dotnet
 TAG=ghcr.io/lyscm/environments/dotnet
 ```
+
+***Powershell:***
+```powershell
+$OWNER="lyscm"
+$CONTAINER_NAME="dotnet"
+$TAG="ghcr.io/lyscm/environments/dotnet"
+```
+
 Remove any existing container:
 
 ```bash
