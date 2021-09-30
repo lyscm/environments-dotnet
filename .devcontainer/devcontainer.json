@@ -18,7 +18,9 @@
 			"**/*.code-search": true,
 			"**/env/**": true,
 			"**/.vscode/**": true,
-			"**/venv/**": true
+			"**/venv/**": true,
+			"**/bin/**": true,
+			"**/obj/**": true
 		},
 		"files.watcherExclude": {
 			"**/target/**": true,
@@ -30,7 +32,9 @@
 			"**/env/**": true,
 			"**/venv/**": true,
 			"**/.vscode/**": true,
-			"env-*": true
+			"env-*": true,
+			"**/bin/**": true,
+			"**/obj/**": true
 		}
 	},
 	"extensions": [
