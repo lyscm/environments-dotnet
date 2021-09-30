@@ -32,6 +32,7 @@ docker pull $TAG
 
 Run container:
 
+***Bash:***
 ```bash
 docker run \
     -d \
@@ -40,5 +41,16 @@ docker run \
     -v /var/run/docker.sock:/var/run/docker-host.sock \
     --net=host \
     --privileged \
+    $TAG
+```
+***Powershell:***
+```powershell
+docker run `
+    -d `
+    --name $CONTAINER_NAME `
+    --restart unless-stopped `
+    -v /var/run/docker.sock:/var/run/docker-host.sock `
+    --net=host `
+    --privileged `
     $TAG
 ```
