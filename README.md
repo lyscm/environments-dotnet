@@ -40,7 +40,9 @@ docker run \
     --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker-host.sock \
     --net=host \
-    --privileged \
+    --privileged \ 
+    --env GIT_AUTHOR= \
+    --env GIT_EMAIL= \
     $TAG
 ```
 ***Powershell:***
@@ -51,6 +53,8 @@ docker run `
     --restart unless-stopped `
     -v /var/run/docker.sock:/var/run/docker-host.sock `
     --net=host `
-    --privileged `
+    --privileged ` 
+    --env GIT_AUTHOR= `
+    --env GIT_EMAIL= `
     $TAG
 ```
